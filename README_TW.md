@@ -1,20 +1,20 @@
-# Diff 文字比對與字數統計
+# Text Diff 文字比對與字數統計
 
-[English](README.md) · [Demo](https://kageryo.github.io/diff/)
+[English](README.md) · [Demo](https://kageryo.github.io/text-diff/)
 
 左右貼上兩段文字，即時以 git 風格標示差異，同時統計字數、字元數、中文字、英文單字、數字、符號與空白。所有處理都在瀏覽器中完成，文字不會上傳或保存。
 
-[![Release](https://img.shields.io/github/v/release/KageRyo/diff)](https://github.com/KageRyo/diff/releases)
+[![Release](https://img.shields.io/github/v/release/KageRyo/text-diff)](https://github.com/KageRyo/text-diff/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tocas UI](https://img.shields.io/badge/Tocas_UI-5.7-1b1c1d)](https://tocas-ui.com/)
 [![jsdiff](https://img.shields.io/badge/jsdiff-9.0-cb3837?logo=npm&logoColor=white)](https://github.com/kpdecker/jsdiff)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES_modules-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Modules)
-[![Pages](https://github.com/KageRyo/diff/actions/workflows/pages.yml/badge.svg)](https://github.com/KageRyo/diff/actions/workflows/pages.yml)
+[![Pages](https://github.com/KageRyo/text-diff/actions/workflows/pages.yml/badge.svg)](https://github.com/KageRyo/text-diff/actions/workflows/pages.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub stars](https://img.shields.io/github/stars/KageRyo/diff?style=flat)](https://github.com/KageRyo/diff/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/KageRyo/diff)](https://github.com/KageRyo/diff/commits)
+[![GitHub stars](https://img.shields.io/github/stars/KageRyo/text-diff?style=flat)](https://github.com/KageRyo/text-diff/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/KageRyo/text-diff)](https://github.com/KageRyo/text-diff/commits)
 
-[![Diff 比對兩段正體中文：逐行與逐字標示差異，並顯示兩側統計](docs/images/screenshot.png)](https://kageryo.github.io/diff/)
+[![Text Diff 比對兩段正體中文：逐行與逐字標示差異，並顯示兩側統計](docs/images/screenshot.png)](https://kageryo.github.io/text-diff/)
 
 ## 功能概覽
 
@@ -52,7 +52,7 @@
 
 ## 使用方式
 
-1. 開啟 [Demo](https://kageryo.github.io/diff/)。
+1. 開啟 [Demo](https://kageryo.github.io/text-diff/)。
 2. 左側貼上原始文字、右側貼上修改後的文字。
 3. 在下方查看差異，並可切換「並排」或「合併」。
 4. 依需求調整統計與比對選項，設定會保存在這台裝置上。
@@ -64,8 +64,8 @@
 需要 Node.js 22 以上。本專案不需要 build：頁面從 cdnjs 載入 Tocas UI，並透過 `index.html` 的 import map 從 `node_modules` 載入 jsdiff，因此請先安裝依賴再啟動。
 
 ```bash
-git clone https://github.com/KageRyo/diff.git
-cd diff
+git clone https://github.com/KageRyo/text-diff.git
+cd text-diff
 npm install
 npm start
 ```
@@ -96,7 +96,7 @@ npm run screenshot       # 重新產生 docs/images/screenshot.png
 
 [Pages workflow](.github/workflows/pages.yml) 會在每次 push 與 pull request 執行單元與瀏覽器測試，並從 `main` 部署靜態檔案到 GitHub Pages。若要部署自己的 fork，請到 **Settings → Pages** 將來源設為 **GitHub Actions**，再 push 到 `main`。
 
-Diff 是靜態網站，也可以放到任何靜態網頁伺服器：執行 `npm install` 後，發布 `index.html`、`favicon.svg`、`css/`、`js/`，以及 `node_modules/diff/libesm/` 與 `node_modules/diff/LICENSE`。
+Text Diff 是靜態網站，也可以放到任何靜態網頁伺服器：執行 `npm install` 後，發布 `index.html`、`favicon.svg`、`css/`、`js/`，以及 `node_modules/diff/libesm/` 與 `node_modules/diff/LICENSE`。
 
 ## 參與貢獻
 

@@ -36,5 +36,5 @@ export function startServer(port = Number(process.env.PORT) || 8080) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const server = await startServer();
-  console.log(`Diff is running at http://localhost:${server.address().port}`);
+  console.log(`Text Diff is running at http://localhost:${server.address().port}`);
 }

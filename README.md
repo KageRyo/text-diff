@@ -1,20 +1,20 @@
-# Diff
+# Text Diff
 
-[正體中文](README_TW.md) · [Demo](https://kageryo.github.io/diff/)
+[正體中文](README_TW.md) · [Demo](https://kageryo.github.io/text-diff/)
 
 Compare two texts side by side with git-style highlighting, and count words, characters, Chinese characters, English words, digits, symbols, and whitespace as you type. Everything runs in your browser: your text is never uploaded or stored.
 
-[![Release](https://img.shields.io/github/v/release/KageRyo/diff)](https://github.com/KageRyo/diff/releases)
+[![Release](https://img.shields.io/github/v/release/KageRyo/text-diff)](https://github.com/KageRyo/text-diff/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tocas UI](https://img.shields.io/badge/Tocas_UI-5.7-1b1c1d)](https://tocas-ui.com/)
 [![jsdiff](https://img.shields.io/badge/jsdiff-9.0-cb3837?logo=npm&logoColor=white)](https://github.com/kpdecker/jsdiff)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES_modules-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Modules)
-[![Pages](https://github.com/KageRyo/diff/actions/workflows/pages.yml/badge.svg)](https://github.com/KageRyo/diff/actions/workflows/pages.yml)
+[![Pages](https://github.com/KageRyo/text-diff/actions/workflows/pages.yml/badge.svg)](https://github.com/KageRyo/text-diff/actions/workflows/pages.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub stars](https://img.shields.io/github/stars/KageRyo/diff?style=flat)](https://github.com/KageRyo/diff/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/KageRyo/diff)](https://github.com/KageRyo/diff/commits)
+[![GitHub stars](https://img.shields.io/github/stars/KageRyo/text-diff?style=flat)](https://github.com/KageRyo/text-diff/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/KageRyo/text-diff)](https://github.com/KageRyo/text-diff/commits)
 
-[![Diff comparing two Traditional Chinese paragraphs with line and character highlights and statistics for each side](docs/images/screenshot.png)](https://kageryo.github.io/diff/)
+[![Text Diff comparing two Traditional Chinese paragraphs with line and character highlights and statistics for each side](docs/images/screenshot.png)](https://kageryo.github.io/text-diff/)
 
 ## At a glance
 
@@ -52,20 +52,20 @@ Text is split into user-perceived characters (grapheme clusters), so an emoji se
 
 ## Usage
 
-1. Open the [demo](https://kageryo.github.io/diff/).
+1. Open the [demo](https://kageryo.github.io/text-diff/).
 2. Paste the original text on the left and the modified text on the right.
 3. Read the differences below the editors, and switch between **Split** and **Unified** views.
 4. Adjust the statistics and diff options; your choices are remembered on this device.
 
-The diff compares lines first, then highlights the characters that changed within each modified line. Lines that are too different are highlighted as a whole, and so are the remaining lines once highlighting a very large change has taken half a second. If the texts are so different that the comparison takes longer than 2 seconds, Diff shows the whole text as replaced.
+The diff compares lines first, then highlights the characters that changed within each modified line. Lines that are too different are highlighted as a whole, and so are the remaining lines once highlighting a very large change has taken half a second. If the texts are so different that the comparison takes longer than 2 seconds, Text Diff shows the whole text as replaced.
 
 ## Development
 
 You need Node.js 22 or newer. There is no build step: the page loads Tocas UI from cdnjs, and an import map in `index.html` loads jsdiff from `node_modules`, so install the dependencies before you serve the page.
 
 ```bash
-git clone https://github.com/KageRyo/diff.git
-cd diff
+git clone https://github.com/KageRyo/text-diff.git
+cd text-diff
 npm install
 npm start
 ```
@@ -96,7 +96,7 @@ The browser and the unit tests use the same jsdiff files from `node_modules`, so
 
 The [Pages workflow](.github/workflows/pages.yml) runs the unit and browser tests on every push and pull request, and deploys the static files to GitHub Pages from `main`. To deploy a fork, open **Settings → Pages**, select **GitHub Actions** as the source, and push to `main`.
 
-Diff is a static site, so you can also host it on any static web server. After `npm install`, publish `index.html`, `favicon.svg`, `css/`, `js/`, and `node_modules/diff/libesm/` together with `node_modules/diff/LICENSE`.
+Text Diff is a static site, so you can also host it on any static web server. After `npm install`, publish `index.html`, `favicon.svg`, `css/`, `js/`, and `node_modules/diff/libesm/` together with `node_modules/diff/LICENSE`.
 
 ## Contributing
 

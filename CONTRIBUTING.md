@@ -4,11 +4,11 @@
 
 ## English
 
-Thank you for helping improve Diff! Bug reports, ideas, translations, and pull requests are all welcome.
+Thank you for helping improve Text Diff! Bug reports, ideas, translations, and pull requests are all welcome.
 
 ### Reporting issues
 
-- Use the issue templates for [bug reports](https://github.com/KageRyo/diff/issues/new?template=bug_report.yml) and [feature requests](https://github.com/KageRyo/diff/issues/new?template=feature_request.yml).
+- Use the issue templates for [bug reports](https://github.com/KageRyo/text-diff/issues/new?template=bug_report.yml) and [feature requests](https://github.com/KageRyo/text-diff/issues/new?template=feature_request.yml).
 - For counting or diff problems, include a minimal sample text, the options you enabled, and the result you expected.
 - Do not paste private or sensitive text.
 
@@ -52,11 +52,11 @@ feat(diff): add a word-level highlight option
 
 ## 正體中文
 
-感謝你協助改善 Diff！歡迎回報問題、提出想法、協助翻譯或送出 pull request。
+感謝你協助改善 Text Diff！歡迎回報問題、提出想法、協助翻譯或送出 pull request。
 
 ### 回報問題
 
-- 請使用 [Bug 回報](https://github.com/KageRyo/diff/issues/new?template=bug_report.yml) 與 [功能建議](https://github.com/KageRyo/diff/issues/new?template=feature_request.yml) 範本。
+- 請使用 [Bug 回報](https://github.com/KageRyo/text-diff/issues/new?template=bug_report.yml) 與 [功能建議](https://github.com/KageRyo/text-diff/issues/new?template=feature_request.yml) 範本。
 - 統計或比對結果有誤時，請附上最小的範例文字、勾選的選項，以及你預期的結果。
 - 請勿貼上私人或敏感內容。
 

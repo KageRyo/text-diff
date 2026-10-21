@@ -1,6 +1,6 @@
 /** Traditional Chinese (Taiwan) interface strings. Keep the keys in sync with en.js. */
 export default {
-  'app.title': 'Diff · 文字比對與字數統計',
+  'app.title': 'Text Diff · 文字比對與字數統計',
   'app.tagline': '文字比對與字數統計',
   'theme.auto': '自動',
   'theme.light': '淺色',

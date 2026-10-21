@@ -96,7 +96,7 @@ try {
     await page.click('#lang-toggle');
     await waitForText(page, '#left-title', 'Original');
     assert.equal(await page.evaluate(() => document.documentElement.lang), 'en');
-    assert.equal(await page.title(), 'Diff · Text Compare & Word Count');
+    assert.equal(await page.title(), 'Text Diff · Text Compare & Word Count');
   });
 
   await check('cycles themes', async () => {
