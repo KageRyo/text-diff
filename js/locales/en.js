@@ -1,6 +1,6 @@
 /** English interface strings. Keep the keys in sync with zh-TW.js. */
 export default {
-  'app.title': 'Diff · Text Compare & Word Count',
+  'app.title': 'Text Diff · Text Compare & Word Count',
   'app.tagline': 'Compare texts and count words',
   'theme.auto': 'Auto',
   'theme.light': 'Light',
