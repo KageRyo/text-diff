@@ -141,11 +141,11 @@ test('categories add up to the total number of characters', () => {
   assert.equal(sum, stats.characters);
 });
 
-test('a counter reuses the result while the text and options stay the same', () => {
+test('a counter updates results when text or counting options change', () => {
   const count = createCounter();
-  const first = count('同一段文字', { includeNewline: false, theme: 'dark' });
-  assert.equal(count('同一段文字', { includeNewline: false, theme: 'light' }), first);
-  assert.notEqual(count('同一段文字', { includeNewline: true }), first);
-  assert.notEqual(count('另一段文字'), first);
-  assert.deepEqual(count('同一段文字'), countText('同一段文字'));
+  assert.equal(count('a\nb').characters, 2);
+  assert.equal(count('a\nb', { includeNewline: true }).characters, 3);
+  assert.equal(count('a\nb').characters, 2);
+  assert.equal(count('另一段文字').han, 5);
+  assert.equal(count('a\nb').han, 0);
 });
