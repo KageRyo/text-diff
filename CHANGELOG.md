@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 - 2026-10-23
+
+- Use the Text Diff name and canonical project links throughout the application and documentation.
+- Keep text comparison, Unicode handling and privacy behavior unchanged.
+
 ## 0.1.0
 
 First tagged release of Diff.
