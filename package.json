@@ -1,6 +1,6 @@
 {
   "name": "kageryo-text-diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Compare two texts with git-style diffs and count words, characters, Chinese characters, letters, digits, symbols, and whitespace in your browser.",
   "type": "module",
